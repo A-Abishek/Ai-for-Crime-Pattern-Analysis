@@ -1,0 +1,88 @@
+/* style.css */
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #6a11cb, #2575fc); /* Gradient background */
+    color: #333; /* Darker text for better contrast */
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Deeper shadow */
+    width: 450px; /* Slightly wider container */
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #4a148c; /* Dark purple for heading */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600; /* Semi-bold label */
+    color: #555;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="time"],
+select,
+textarea {
+    width: calc(100% - 16px);
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease; /* Smooth border transition */
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+input[type="time"]:focus,
+select:focus,
+textarea:focus {
+    border-color: #6a11cb; /* Highlight on focus */
+    outline: none; /* Remove default focus outline */
+}
+
+button {
+    background: linear-gradient(to right, #6a11cb, #2575fc); /* Gradient button */
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background 0.3s ease; /* Smooth background transition */
+}
+
+button:hover {
+    background: linear-gradient(to right, #4a148c, #1e6091); /* Darker gradient on hover */
+}
+
+#reportDisplay {
+    margin-top: 30px;
+    padding: 20px;
+    border: 1px solid #eee;
+    background-color: #f9f9f9;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for report display */
+    line-height: 1.6; /* Improve readability */
+}
+
+#reportDisplay h3 {
+    color: #4a148c;
+    margin-bottom: 15px;
+}

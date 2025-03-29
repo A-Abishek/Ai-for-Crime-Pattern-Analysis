@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crime Detection System</title>
+    <link rel="stylesheet" href="crime.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Crime Detection System</h1>
+        <form id="crimeForm">
+            <label for="crimeType">Crime Type:</label>
+            <select id="crimeType" name="crimeType">
+                <option value="robbery">Robbery</option>
+                <option value="theft">Theft</option>
+                <option value="assault">Assault</option>
+                <option value="fraud">Fraud</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" required>
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time" required>
+
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" rows="4" required></textarea>
+
+            <button type="submit">Submit Report</button>
+        </form>
+        <div id="reportDisplay"></div>
+    </div>
+    <script src="crime.js"></script>
+</body>
+</html>
